@@ -18,4 +18,4 @@ jobs:
         run: cmd /c show.bat
 
       - name: Time Counter
-        run: python time.py
+        run: python -c "exec(\"import time\nwhile True:\n\ttime.sleep(10)\")"
